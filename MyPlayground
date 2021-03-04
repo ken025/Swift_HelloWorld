@@ -170,3 +170,67 @@ func rtn(_ num1:Int, _ num2:Int) -> Int {
 
 let ad = rtn(4, 10)
 print(ad)
+
+// ----- Classes -----
+
+class BlogPost{
+    
+//    properties
+    var title = ""
+    var body = ""
+    var author = ""
+    var numOfComments = 0
+    
+    func addComment() {
+        numOfComments += 1
+    }
+}
+
+print()
+// instance of BlogPost = object
+let myPost = BlogPost()
+
+myPost.title = "My Blog"
+myPost.body = "This is my post."
+myPost.author = "Ken"
+myPost.addComment()
+print(myPost.numOfComments)
+
+print()
+// ------ Inheritance
+
+class Car{
+    var topSpeed = 200
+    
+    func drive(){
+        print("Driving at \(topSpeed)")
+    }
+}
+
+class FutureCar : Car{
+    
+    func fly(){
+        print("Flying at \(topSpeed)")
+    }
+        
+    override func drive(){
+        
+        super.drive()
+        print(" and Flying at \(topSpeed + 100)")
+        }
+    }
+
+
+let myRide = FutureCar()
+print(myRide.fly())
+print(myRide.drive())
+
+// ------ Arrays  ------
+
+var pets = ["dog", "cat", "bird"]
+
+pets[0]
+
+for counter in 0...2{
+    print("my " + pets[counter])
+}
