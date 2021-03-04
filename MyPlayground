@@ -34,3 +34,34 @@ print(Int(float))
 print(double)
 print(round(double))
 print(Int(round(double)))
+
+
+// ----- If Statements -----
+ var f = 10
+ 
+if f < 4 {
+    
+    print("Hey")
+}else if f == 10 && f > 5{
+    
+    print("Hi")
+}else if f <= 5{
+    
+    print("Humm")
+}else{
+    
+    print("Nothing was true")
+}
+ 
+// ----- Switch Statements -----
+
+var someChar:Character = "a"
+
+switch someChar {
+case "a":
+    print("It works!")
+case "b", "c":
+    print("Nope")
+default:
+    print("Meh")
+}
