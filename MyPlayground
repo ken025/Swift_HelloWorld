@@ -1,0 +1,36 @@
+import UIKit
+
+var str = "Hello, playground"
+
+// ----- Variables -----
+
+var a = 1
+var b = 1
+
+a = 2
+
+print(a + b)
+print(a - b)
+print(a / b)
+print(a * b)
+
+// Constants
+
+let c = 20
+//c = 5 //=> error
+
+// Converting Data Types
+str = "29"
+print(str)
+
+str = String(29)
+
+var float:Float = 2.3
+var double:Double = 15.222
+var tf:Bool = true
+
+print(Int(float))
+
+print(double)
+print(round(double))
+print(Int(round(double)))
