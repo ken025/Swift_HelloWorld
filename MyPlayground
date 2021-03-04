@@ -105,3 +105,68 @@ repeat{
    count = count - 1
 }while count > 0
 
+// ----- Functions -----
+
+func addTwo(){
+    let num1 = 2
+    let num2 = 4
+    let addition = num1 + num2
+    
+    print(addition)
+}
+
+addTwo()
+
+func addT() -> Int {
+    let num1 = 2
+    let num2 = 4
+    let addition = num1 + num2
+    
+    return addition
+}
+
+let summ =  addT()
+print(summ)
+
+// With input params
+
+func addThem(arg1 param1:Int, arg2 param2:Int) -> Int {
+    let num1 = param1
+    let num2 = param2
+    let addition = num1 + num2
+    
+    return addition
+}
+
+let sm = addThem(arg1: 3, arg2: 8)
+print(sm)
+
+//--------
+
+func rturn(num1:Int, num2:Int) -> Int {
+    return num1 + num2
+}
+
+
+let addi = rturn(num1: 5, num2: 10)
+print(addi)
+
+//-------
+
+func rtrn(using num1:Int, and num2:Int) -> Int {
+    return num1 + num2
+}
+
+
+let adi = rtrn(using: 4, and: 10)
+print(adi)
+
+//-------
+
+func rtn(_ num1:Int, _ num2:Int) -> Int {
+    return num1 + num2
+}
+
+
+let ad = rtn(4, 10)
+print(ad)
