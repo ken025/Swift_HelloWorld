@@ -65,3 +65,43 @@ case "b", "c":
 default:
     print("Meh")
 }
+
+// ----- Loops -----
+
+// for in
+for idx in 1...5{
+    print(idx)
+    print("Hello")
+    
+    var sum = 0
+    sum += idx
+    print(sum)
+}
+
+// while
+// ----- Loops -----
+
+// for in
+for idx in 1...5{
+    print(idx)
+    print("Hello")
+    
+    var sum = 0
+    sum += idx
+    print(sum)
+}
+
+// while
+
+var count = -5
+
+while count < 0{
+   print("hello")
+   count = count - 1
+}
+
+repeat{
+   print("hoo")
+   count = count - 1
+}while count > 0
+
